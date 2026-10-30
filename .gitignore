@@ -1,0 +1,25 @@
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build files
+bin/
+obj/
+Debug/
+Release/
+
+# SQL Server database files
+*.mdf
+*.ldf
+
+# Private signing keys
+*.pfx
+
+# Temporary files
+*.log
+*.tmp
+
+# Archive - review before uploading
+Master.zip

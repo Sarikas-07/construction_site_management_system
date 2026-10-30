@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CSMSDBDataSet" targetNamespace="http://tempuri.org/CSMSDBDataSet.xsd" xmlns:mstns="http://tempuri.org/CSMSDBDataSet.xsd" xmlns="http://tempuri.org/CSMSDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CSMSDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CSMSDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CSMS.Properties.Settings.GlobalReference.Default.CSMSDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="siteallocationTableAdapter" GeneratorDataComponentClassName="siteallocationTableAdapter" Name="siteallocation" UserDataComponentName="siteallocationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CSMSDBConnectionString (Settings)" DbObjectName="dbo.siteallocation" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT wallocationid, workername, sitename FROM dbo.siteallocation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="wallocationid" DataSetColumn="wallocationid" />
+              <Mapping SourceColumn="workername" DataSetColumn="workername" />
+              <Mapping SourceColumn="sitename" DataSetColumn="sitename" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="sitematerial1TableAdapter" GeneratorDataComponentClassName="sitematerial1TableAdapter" Name="sitematerial1" UserDataComponentName="sitematerial1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CSMSDBConnectionString (Settings)" DbObjectName="dbo.sitematerial1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT sitematerialid, sitename, mname, materialquantity FROM dbo.sitematerial1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="sitematerialid" DataSetColumn="sitematerialid" />
+              <Mapping SourceColumn="sitename" DataSetColumn="sitename" />
+              <Mapping SourceColumn="mname" DataSetColumn="mname" />
+              <Mapping SourceColumn="materialquantity" DataSetColumn="materialquantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="purchaseviewTableAdapter" GeneratorDataComponentClassName="purchaseviewTableAdapter" Name="purchaseview" UserDataComponentName="purchaseviewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CSMSDBConnectionString (Settings)" DbObjectName="dbo.purchaseview" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT poid, sname, podate, pofinalamount, podiscount, pototal FROM dbo.purchaseview</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="poid" DataSetColumn="poid" />
+              <Mapping SourceColumn="sname" DataSetColumn="sname" />
+              <Mapping SourceColumn="podate" DataSetColumn="podate" />
+              <Mapping SourceColumn="pofinalamount" DataSetColumn="pofinalamount" />
+              <Mapping SourceColumn="podiscount" DataSetColumn="podiscount" />
+              <Mapping SourceColumn="pototal" DataSetColumn="pototal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CSMSDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="CSMSDBDataSet" msprop:Generator_UserDSName="CSMSDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="siteallocation" msprop:Generator_TableClassName="siteallocationDataTable" msprop:Generator_TableVarName="tablesiteallocation" msprop:Generator_TablePropName="siteallocation" msprop:Generator_RowDeletingName="siteallocationRowDeleting" msprop:Generator_RowChangingName="siteallocationRowChanging" msprop:Generator_RowEvHandlerName="siteallocationRowChangeEventHandler" msprop:Generator_RowDeletedName="siteallocationRowDeleted" msprop:Generator_UserTableName="siteallocation" msprop:Generator_RowChangedName="siteallocationRowChanged" msprop:Generator_RowEvArgName="siteallocationRowChangeEvent" msprop:Generator_RowClassName="siteallocationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wallocationid" msprop:Generator_ColumnVarNameInTable="columnwallocationid" msprop:Generator_ColumnPropNameInRow="wallocationid" msprop:Generator_ColumnPropNameInTable="wallocationidColumn" msprop:Generator_UserColumnName="wallocationid" type="xs:int" minOccurs="0" />
+              <xs:element name="workername" msprop:Generator_ColumnVarNameInTable="columnworkername" msprop:Generator_ColumnPropNameInRow="workername" msprop:Generator_ColumnPropNameInTable="workernameColumn" msprop:Generator_UserColumnName="workername" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sitename" msprop:Generator_ColumnVarNameInTable="columnsitename" msprop:Generator_ColumnPropNameInRow="sitename" msprop:Generator_ColumnPropNameInTable="sitenameColumn" msprop:Generator_UserColumnName="sitename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sitematerial1" msprop:Generator_TableClassName="sitematerial1DataTable" msprop:Generator_TableVarName="tablesitematerial1" msprop:Generator_TablePropName="sitematerial1" msprop:Generator_RowDeletingName="sitematerial1RowDeleting" msprop:Generator_RowChangingName="sitematerial1RowChanging" msprop:Generator_RowEvHandlerName="sitematerial1RowChangeEventHandler" msprop:Generator_RowDeletedName="sitematerial1RowDeleted" msprop:Generator_UserTableName="sitematerial1" msprop:Generator_RowChangedName="sitematerial1RowChanged" msprop:Generator_RowEvArgName="sitematerial1RowChangeEvent" msprop:Generator_RowClassName="sitematerial1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sitematerialid" msprop:Generator_ColumnVarNameInTable="columnsitematerialid" msprop:Generator_ColumnPropNameInRow="sitematerialid" msprop:Generator_ColumnPropNameInTable="sitematerialidColumn" msprop:Generator_UserColumnName="sitematerialid" type="xs:int" minOccurs="0" />
+              <xs:element name="sitename" msprop:Generator_ColumnVarNameInTable="columnsitename" msprop:Generator_ColumnPropNameInRow="sitename" msprop:Generator_ColumnPropNameInTable="sitenameColumn" msprop:Generator_UserColumnName="sitename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mname" msprop:Generator_ColumnVarNameInTable="columnmname" msprop:Generator_ColumnPropNameInRow="mname" msprop:Generator_ColumnPropNameInTable="mnameColumn" msprop:Generator_UserColumnName="mname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="materialquantity" msprop:Generator_ColumnVarNameInTable="columnmaterialquantity" msprop:Generator_ColumnPropNameInRow="materialquantity" msprop:Generator_ColumnPropNameInTable="materialquantityColumn" msprop:Generator_UserColumnName="materialquantity" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="purchaseview" msprop:Generator_TableClassName="purchaseviewDataTable" msprop:Generator_TableVarName="tablepurchaseview" msprop:Generator_TablePropName="purchaseview" msprop:Generator_RowDeletingName="purchaseviewRowDeleting" msprop:Generator_RowChangingName="purchaseviewRowChanging" msprop:Generator_RowEvHandlerName="purchaseviewRowChangeEventHandler" msprop:Generator_RowDeletedName="purchaseviewRowDeleted" msprop:Generator_UserTableName="purchaseview" msprop:Generator_RowChangedName="purchaseviewRowChanged" msprop:Generator_RowEvArgName="purchaseviewRowChangeEvent" msprop:Generator_RowClassName="purchaseviewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="poid" msprop:Generator_ColumnVarNameInTable="columnpoid" msprop:Generator_ColumnPropNameInRow="poid" msprop:Generator_ColumnPropNameInTable="poidColumn" msprop:Generator_UserColumnName="poid" type="xs:int" minOccurs="0" />
+              <xs:element name="sname" msprop:Generator_ColumnVarNameInTable="columnsname" msprop:Generator_ColumnPropNameInRow="sname" msprop:Generator_ColumnPropNameInTable="snameColumn" msprop:Generator_UserColumnName="sname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="podate" msprop:Generator_ColumnVarNameInTable="columnpodate" msprop:Generator_ColumnPropNameInRow="podate" msprop:Generator_ColumnPropNameInTable="podateColumn" msprop:Generator_UserColumnName="podate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pofinalamount" msprop:Generator_ColumnVarNameInTable="columnpofinalamount" msprop:Generator_ColumnPropNameInRow="pofinalamount" msprop:Generator_ColumnPropNameInTable="pofinalamountColumn" msprop:Generator_UserColumnName="pofinalamount" type="xs:long" minOccurs="0" />
+              <xs:element name="podiscount" msprop:Generator_ColumnVarNameInTable="columnpodiscount" msprop:Generator_ColumnPropNameInRow="podiscount" msprop:Generator_ColumnPropNameInTable="podiscountColumn" msprop:Generator_UserColumnName="podiscount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pototal" msprop:Generator_ColumnVarNameInTable="columnpototal" msprop:Generator_ColumnPropNameInRow="pototal" msprop:Generator_ColumnPropNameInTable="pototalColumn" msprop:Generator_UserColumnName="pototal" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
